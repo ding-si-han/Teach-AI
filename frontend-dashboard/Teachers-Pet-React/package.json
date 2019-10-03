@@ -1,0 +1,74 @@
+{
+  "name": "teachersPet",
+  "version": "1.0.0",
+  "description": "Personalised Engagement Teacher",
+  "private": false,
+  "main": "dist/index.js",
+  "dependencies": {
+    "@material-ui/core": "^4.0.0-rc.0",
+    "@material-ui/icons": "3.0.2",
+    "@mdi/font": "^4.4.95",
+    "@mdi/js": "^4.4.95",
+    "chartist": "0.10.1",
+    "classnames": "2.2.6",
+    "framer-motion": "^1.6.7",
+    "history": "4.7.2",
+    "iframe-resizer": "^4.2.1",
+    "material-auto-rotating-carousel": "^3.0.2",
+    "node-sass": "^4.12.0",
+    "perfect-scrollbar": "1.4.0",
+    "prettier": "1.16.4",
+    "prop-types": "15.7.1",
+    "react": "16.8.1",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-chartist": "0.13.3",
+    "react-dom": "16.8.1",
+    "react-google-maps": "9.4.5",
+    "react-iframe": "^1.5.0",
+    "react-papaparse": "^1.0.5",
+    "react-router-dom": "4.3.1",
+    "react-scripts": "2.1.5",
+    "react-swipeable-views": "0.13.1",
+    "sweetalert-react": "^0.4.11",
+    "sweetalert2": "^8.17.6",
+    "sweetalert2-react": "^0.8.3",
+    "sweetalert2-react-content": "^1.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "build-package-css": "cp src/assets/css/material-dashboard-react.css dist/material-dashboard-react.css",
+    "build-package": "npm run build-package-css && babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+  },
+  "keywords": [],
+  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
+  },
+  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
+  "optionalDependencies": {
+    "@types/googlemaps": "3.30.16",
+    "@types/markerclustererplus": "2.1.33",
+    "ajv": "6.9.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint-config-prettier": "4.0.0",
+    "eslint-plugin-prettier": "3.0.1"
+  }
+}
