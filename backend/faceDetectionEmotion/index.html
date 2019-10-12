@@ -21,18 +21,12 @@
   <script defer src="face-api.min.js"></script>
   <script defer type="module" src="script.js"></script>
   <style>
-    /* body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    } */
     canvas {
       position: absolute;
-      top: 0; z-index: 0;
+      top: 8vw;
+      left: 45vh;
+      z-index: 1;
+      overflow: clip; /*  Disable scrollbars */
     }
     a{
       color : white;
@@ -48,6 +42,10 @@
     }
     #pqr{
       background-color: black;
+    }
+    #video {
+    position: relative;
+    z-index: 0;
     }
   </style>
 </head>
@@ -145,8 +143,8 @@
         <!-- End Navbar -->
         <div class="content" >
             <div class="container-fluid">
-                <div class="section" >
-                    <video id="video" width="720" height="560" autoplay muted></video>
+                <div class="section">
+                    <video id="video" width="720" height="560" position="relative" autoplay muted></video>
                 </div>
                 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
             </div>
