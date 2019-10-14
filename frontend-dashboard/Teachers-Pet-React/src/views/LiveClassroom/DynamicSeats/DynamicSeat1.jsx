@@ -60,7 +60,7 @@ export default class DynamicSeat1 extends React.Component {
             marginTop: "40px",
             height: "63px",
             width: "73px",
-            background: "green",
+            background: (this.state) ? (this.getColor(this.state.database.person6)) : ("grey"),
             color: "white",
             textAlign: "center",
             verticalAlign: "end",
@@ -76,7 +76,7 @@ export default class DynamicSeat1 extends React.Component {
               fontSize: "13px"
             }}
           >
-            Vedant
+            Jun Jia
           </div>
         </div>
       </div>
