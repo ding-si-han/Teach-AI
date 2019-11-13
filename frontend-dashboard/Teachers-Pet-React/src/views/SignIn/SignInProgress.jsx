@@ -32,7 +32,13 @@ function Copyright() {
 const useStyles = makeStyles(theme => ({
   "@global": {
     body: {
-      backgroundColor: theme.palette.common.white
+      paddingTop: '22vh',
+      backgroundImage: "url(" + "https://images.unsplash.com/photo-1521999411642-af5f58ed42b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" + ")",
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      height: '100vh',
+      color: '#3f51b5'
     },
     ul: {
       margin: 0,
@@ -118,7 +124,7 @@ export default function Pricing() {
           color="textPrimary"
           gutterBottom
         >
-          Class Select
+          Select Class
         </Typography>
         <Typography
           variant="h5"

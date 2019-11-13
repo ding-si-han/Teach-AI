@@ -35,14 +35,23 @@ const Link1 = React.forwardRef((props, ref) => (
 const useStyles = makeStyles(theme => ({
   "@global": {
     body: {
-      backgroundColor: theme.palette.common.white
+      // backgroundColor: theme.palette.common.white
+      // backgroundImage: `url(classroom.jpg)`
+      paddingTop: '10vh',
+      backgroundImage: "url(" + "https://images.unsplash.com/photo-1521999411642-af5f58ed42b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80" + ")",
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      height: '100vh',
+      color: '#3f51b5'
+      // filter: `blur(1px)`,
     }
   },
   paper: {
     marginTop: theme.spacing(8),
     display: "flex",
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "center",
   },
   avatar: {
     margin: theme.spacing(1),
@@ -62,6 +71,7 @@ export default function SignIn() {
 
   return (
     <Container component="main" maxWidth="xs">
+      <div styles={{backgroundColor: "black"}}>
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>
@@ -122,6 +132,7 @@ export default function SignIn() {
       <Box mt={8}>
         <Copyright />
       </Box>
+      </div>
     </Container>
   );
 }

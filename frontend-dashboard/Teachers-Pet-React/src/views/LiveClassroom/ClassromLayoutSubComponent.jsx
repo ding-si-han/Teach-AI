@@ -119,7 +119,7 @@ class LiveClassroomComponent extends React.Component {
                         {this.state ? (
                           <span>{this.state.database.numPerson}</span>
                         ) : (
-                          <span>0</span>
+                          <span>2</span>
                         )}
                         /40
                       </h3>
@@ -158,7 +158,7 @@ class LiveClassroomComponent extends React.Component {
                         {this.state ? (
                           <span>{this.state.database.person1}</span>
                         ) : (
-                          <span>0</span>
+                          <span>2.9</span>
                         )}
                       </h3>
                     </CardHeader>

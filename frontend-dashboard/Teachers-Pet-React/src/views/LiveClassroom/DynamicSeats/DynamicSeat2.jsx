@@ -76,7 +76,7 @@ export default class DynamicSeat1 extends React.Component {
               fontSize: "13px"
             }}
           >
-            Si Han
+            Jovan
           </div>
         </div>
       </div>

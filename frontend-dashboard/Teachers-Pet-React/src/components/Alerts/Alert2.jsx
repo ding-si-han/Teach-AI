@@ -3,7 +3,7 @@ import swal from "sweetalert2";
 
 export default function sweetalertfunction2() {
   swal.fire({
-    title: "Jun Jia is missing!\n",
+    title: "Gabriel is missing!\n",
     text: "He has been in the washroom for more than 30 minutes!",
     type: "warning",
     width: 1200,
